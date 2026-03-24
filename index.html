@@ -29,6 +29,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Free Privacy-Focused Analytics (Placeholder) -->
+  <!-- I recommend signing up for a free PostHog or Cloudflare Web Analytics account and pasting your snippet here. -->
 </head>
 <body>
   <!-- Glowing Background Effects -->
@@ -211,6 +214,46 @@
       </div>
     </section>
 
+    <!-- Flaky Test Cost Calculator -->
+    <section id="calculator" class="section">
+      <div class="container">
+        <div class="calculator-card glass animate-on-scroll">
+          <div class="calculator-header">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 0.5rem;">Flaky Test <span class="gradient-text">Cost Calculator</span></h2>
+            <p class="section-subtitle" style="text-align: left; margin-left: 0;">Quantify the hidden drain on your engineering resources.</p>
+          </div>
+          
+          <div class="calculator-grid">
+            <div class="calculator-inputs">
+              <div class="input-group">
+                <div class="input-label-row">
+                  <label for="team-size">Engineering Team Size</label>
+                  <span id="team-size-val" class="input-value">50</span>
+                </div>
+                <input type="range" id="team-size" min="5" max="500" value="50" class="slider">
+              </div>
+
+              <div class="input-group">
+                <div class="input-label-row">
+                  <label for="hours-wasted">Hours Wasted on CI/week (per dev)</label>
+                  <span id="hours-wasted-val" class="input-value">3</span>
+                </div>
+                <input type="range" id="hours-wasted" min="1" max="10" step="0.5" value="3" class="slider">
+              </div>
+            </div>
+
+            <div class="calculator-result">
+              <div class="result-label">ESTIMATED ANNUAL LOSS</div>
+              <div id="annual-loss" class="result-value glow-text">$1,092,000</div>
+              <p class="result-meta">Projected Financial Loss due to Flaky Tests & CI Noise</p>
+              <p class="result-note">Based on avg. salary $140k/yr + overheads</p>
+              <a href="#contact" class="btn btn-primary btn-full" style="margin-top: 2rem;">Stop the Leak &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Why Teams Choose Precision -->
     <section id="why" class="section">
       <div class="container">
@@ -262,7 +305,7 @@
             <h3>Send a Message</h3>
             <p>Tell us a bit about your upcoming release or QA challenges.</p>
             
-            <form name="contact" method="POST" data-netlify="true" class="contact-form">
+            <form name="contact" method="POST" action="/thanks.html" data-netlify="true" class="contact-form">
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required placeholder="John Doe">

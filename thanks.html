@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Received | Precision QA</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .success-container {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .success-icon {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+      background: var(--bg-surface);
+      width: 120px;
+      height: 120px;
+      line-height: 120px;
+      border-radius: 50%;
+      border: 1px solid var(--border-color);
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <nav class="navbar glass">
+    <div class="container nav-content">
+      <div class="logo">
+        <span class="logo-text">Precision<span class="text-accent">QA</span></span>
+      </div>
+      <a href="index.html" class="btn btn-glass">&larr; Back to Home</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section success-container">
+      <div class="container animate-on-scroll">
+        <div class="success-icon glow-icon">✉️</div>
+        <h1 class="hero-title"><span class="gradient-text">Message Received.</span></h1>
+        <p class="hero-subtitle" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+          Thank you for reaching out. We've initialized your inquiry and will be in touch shortly to discuss your QA strategy.
+        </p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a href="index.html" class="btn btn-primary btn-large">Return Home</a>
+          <a href="https://www.linkedin.com/in/hunterom/" class="btn btn-glass" target="_blank">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer border-top">
+    <div class="container">
+      <p class="crypto-text">&copy; 2026 PRECISION QA SYSTEMS // PHOENIX, AZ</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
