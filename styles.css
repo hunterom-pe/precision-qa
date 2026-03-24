@@ -601,3 +601,50 @@ body {
     justify-content: flex-start;
   }
 }
+/* --- Reality Check Section --- */
+.reality-check {
+  padding: 6rem 0;
+}
+
+.reality-card {
+  padding: 4rem;
+  border-radius: 24px;
+}
+
+.pain-points-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.pain-point {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.pain-point:hover {
+  transform: translateY(-5px);
+  background: rgba(2, 132, 199, 0.05);
+  border-color: var(--accent-cyan);
+}
+
+.pain-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pain-point p {
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .reality-card { padding: 3rem 1.5rem; }
+  .pain-points-grid { grid-template-columns: 1fr; }
+}
