@@ -3,60 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Message Received | Precision QA</title>
+  <title>Thank You | Precision QA</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="robots" content="noindex, nofollow">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .success-container {
-      min-height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .success-icon {
-      font-size: 5rem;
-      margin-bottom: 2rem;
-      background: var(--bg-surface);
-      width: 120px;
-      height: 120px;
-      line-height: 120px;
-      border-radius: 50%;
-      border: 1px solid var(--border-color);
-      display: inline-block;
-    }
-  </style>
-  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "bcbf2a8516d74975a4ecef374710bfa8"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body>
   <div class="bg-grid"></div>
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
 
-  <nav class="navbar glass">
+  <nav class="navbar glass animate-on-scroll delay-1">
     <div class="container nav-content">
       <div class="logo">
-        <span class="logo-text">Precision<span class="text-accent">QA</span></span>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+          <span class="logo-text">Precision<span class="text-accent">QA</span></span>
+        </a>
       </div>
-      <a href="index.html" class="btn btn-glass">&larr; Back to Home</a>
+      <div class="nav-links hide-mobile">
+        <a href="index.html#services">Platform</a>
+        <a href="about.html">About</a>
+        <a href="index.html#process">Workflow</a>
+      </div>
+      <a href="index.html#contact" class="btn btn-glow">Book a Consult &rarr;</a>
     </div>
   </nav>
 
-  <main>
-    <section class="section success-container">
-      <div class="container animate-on-scroll">
-        <div class="success-icon glow-icon">✉️</div>
-        <h1 class="hero-title"><span class="gradient-text">Message Received.</span></h1>
-        <p class="hero-subtitle" style="max-width: 600px; margin-left: auto; margin-right: auto;">
-          Thank you for reaching out. We've initialized your inquiry and will be in touch shortly to discuss your QA strategy.
+  <main style="min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <section class="section animate-on-scroll delay-3" style="padding-top: 10rem;">
+      <div class="container" style="max-width: 600px;">
+        <div class="glow-icon" style="margin: 0 auto 2rem; width: 80px; height: 80px;">
+          <!-- SVG Checkmark -->
+          <svg class="lucide-icon" viewBox="0 0 24 24" style="stroke: var(--accent-cyan); width: 100%; height: 100%;">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
+        </div>
+        <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 3rem; line-height: 1.2;"><span class="gradient-text">Message Received.</span></h1>
+        <p class="section-subtitle" style="margin-bottom: 3rem; line-height: 1.8;">
+          Thank you for reaching out. A confirmation has been sent to your email, and we will review your systems thoroughly. We typically respond within 24 hours.
         </p>
-        <div class="hero-actions" style="justify-content: center;">
-          <a href="index.html" class="btn btn-primary btn-large">Return Home</a>
-          <a href="https://www.linkedin.com/in/hunterom/" class="btn btn-glass" target="_blank">Connect on LinkedIn</a>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html" class="btn" style="border: 1px solid var(--border-color); color: var(--text-primary);">&larr; Return Home</a>
+          <a href="https://www.linkedin.com/in/hunterom/" target="_blank" class="btn btn-glow" style="display: flex; gap: 0.5rem;">
+            Connect on LinkedIn
+            <svg class="lucide-icon" viewBox="0 0 24 24" style="width: 1.2rem; height: 1.2rem;">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -64,10 +64,17 @@
 
   <footer class="footer border-top">
     <div class="container">
-      <p class="crypto-text">&copy; 2026 PRECISION QA SYSTEMS // PHOENIX, AZ</p>
+      <div class="footer-grid">
+        <div class="brand">Precision<span class="text-accent">QA</span></div>
+        <div class="links">
+          <a href="https://github.com/hunterom-pe" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/hunterom/" target="_blank">LinkedIn</a>
+          <a href="mailto:hunter@precisionqaconsulting.com">Email</a>
+        </div>
+      </div>
+      <p class="crypto-text">&copy; 2026 PRECISION QA SYSTEMS // PHOENIX, AZ // 928-925-0317</p>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

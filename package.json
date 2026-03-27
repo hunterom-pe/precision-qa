@@ -1,0 +1,25 @@
+{
+  "name": "precision-qa-dark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunterom-pe/precision-qa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hunterom-pe/precision-qa/issues"
+  },
+  "homepage": "https://github.com/hunterom-pe/precision-qa#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "http-server": "^14.1.1"
+  }
+}
