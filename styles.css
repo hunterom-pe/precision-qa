@@ -241,13 +241,18 @@ body {
 .zoom-in { transform: scale(0.9); }
 
 @media (max-width: 768px) {
+  .container { padding: 0 1.5rem; }
   .hero-title { font-size: 3rem; }
   .hide-mobile { display: none; }
   .bento-grid { grid-template-columns: 1fr; }
   .bento-grid.grid-2x2 { grid-template-columns: 1fr; }
+  .bento-card { padding: 1.5rem; }
   .tall, .wide { grid-row: auto; grid-column: auto; }
   .card-wrap { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .timeline-item { flex-direction: column !important; text-align: left !important; align-items: flex-start; }
+  .hero-actions { flex-direction: column; width: 100%; }
+  .hero-actions .btn { width: 100%; margin: 0; }
+  .navbar .btn-glow { padding: 0.6rem 1.25rem; font-size: 0.85rem; }
 }
 
 /* --- Content Additions --- */
@@ -557,6 +562,30 @@ body {
     gap: 3rem;
   }
 }
+
+@media (max-width: 768px) {
+  .calculator-card {
+    padding: 2.5rem 1.5rem;
+  }
+  .input-label-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .input-value {
+    align-self: flex-start;
+  }
+  .result-value {
+    font-size: 2.75rem;
+    letter-spacing: -1px;
+  }
+  .result-label {
+    letter-spacing: 1px;
+  }
+  .section-title {
+    font-size: 2.25rem;
+  }
+}
 /* --- Tech Stack Ribbon --- */
 .tech-ribbon {
   padding: 4rem 0 3rem;
@@ -624,7 +653,7 @@ body {
 @media (max-width: 768px) {
   .ribbon-inner {
     gap: 2rem;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 /* --- Reality Check Section --- */
