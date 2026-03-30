@@ -5,7 +5,7 @@ test.describe('Navigation', () => {
     await page.goto('/');
 
     await expect(page).toHaveTitle(/Precision QA/);
-    await expect(page.locator('h1.hero-title')).toContainText('Ship SaaS');
+    await expect(page.locator('h1.hero-title')).toContainText('Ship Software');
 
     await page.click('nav a:has-text("About")');
 
@@ -17,13 +17,13 @@ test.describe('Navigation', () => {
     await page.click('.logo a');
 
     await page.waitForURL('**/index.html*');
-    await expect(page.locator('h1.hero-title')).toContainText('Ship SaaS');
+    await expect(page.locator('h1.hero-title')).toContainText('Ship Software');
   });
 
   test('anchor links should route to sections', async ({ page }) => {
     await page.goto('/');
 
-    await page.click('nav a[href="#services"]');
+    await page.click('nav a:has-text("QA Services")');
     expect(page.url()).toContain('#services');
     
     const servicesSection = page.locator('#services');
